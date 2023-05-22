@@ -44,12 +44,10 @@ namespace Gra
                     {
                         PrintColorMessage(ConsoleColor.Yellow, "Proszę wprowadzić liczbę od 1 do 10.");
                         continue;
-
                     }
                     if (guess < correctNumber)
                     {
                         PrintColorMessage(ConsoleColor.Yellow, "Błędna odpowiedz. Wylosowana liczba jest większa");
-
                     }
                     else if (guess > correctNumber)
                     {
@@ -59,14 +57,9 @@ namespace Gra
                     {
                         correctAnswer = true;
                         PrintColorMessage(ConsoleColor.Green, "Brawo prawidłowa odpowiedź");
-
                     }
-
                 }
-
                 Again(ref start);
-
-
             }
 
         }
@@ -78,7 +71,6 @@ namespace Gra
 
             string info = $"[{appName}] Wersja: {appVersion}.0, Autor: {appAuthor}";
             PrintColorMessage(ConsoleColor.DarkCyan, info);
-
         }
 
         static string GetUserName()
@@ -86,14 +78,12 @@ namespace Gra
             Console.WriteLine("Podaj imię");
             string userName = Console.ReadLine();
             return userName;
-
         }
         static void GreetUser(string userName)
         {
 
             string greet = "Powodzenia " + userName;
             PrintColorMessage(ConsoleColor.DarkMagenta, greet);
-
 
         }
         static void PrintColorMessage(ConsoleColor color, string message)
@@ -108,32 +98,25 @@ namespace Gra
             bool isNumeric = false;
             
             while (isNumeric == false)
-            {
-
-                
+            {                
                 Console.WriteLine("Czy chcesz zagrać ponownie? Naciśnij '1' jeśli tak, '0' aby zakmnąć program");
                 
                 var answer = Console.ReadLine();
-                isNumeric = int.TryParse(answer, out int decision);
-              
+                isNumeric = int.TryParse(answer, out int decision);         
                
                 if (isNumeric == true)
                 {
 
                     if (decision == 1)
                     {
-
                         Console.Clear();
                         return;
-
 
                     }
                     else if (decision == 0)
                     {
-
                         end = false;
                         return;
-
                     }
                     else
                     {
