@@ -56,7 +56,7 @@ namespace Gra
                     else
                     {
                         correctAnswer = true;
-                        PrintColorMessage(ConsoleColor.Green, "Brawo prawidłowa odpowiedź");
+                        PrintColorMessage(ConsoleColor.Green, "Brawo prawidłowa odpowiedź!");
                     }
                 }
                 Again(ref start);
