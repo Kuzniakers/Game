@@ -143,7 +143,7 @@ namespace Gra
                 }
                 else
                 {                  
-                    PrintColorMessage(ConsoleColor.Yellow, "Twoja odpowiedź nie jest liczbą. Wpisz ponownie");
+                    PrintColorMessage(ConsoleColor.Yellow, "Twoja odpowiedź nie jest liczbą. Wpisz ponownie!");
                     
                 }
                                       
